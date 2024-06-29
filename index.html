@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern</title>
+    <link rel="shortcut icon" href="./mfavcon.png" type="image/x-icon">
+</head>
+<body>
+   <pre><h1>
+    Task:-      problem solving task:
+    1) Enter no of rows : 4
+    output:
+    a
+    a B
+    a B c
+    a B c D
+    2)Enter no of rows: 4
+    output :
+    A
+    b C
+    d E f
+    G h I j
+    
+   </h1></pre> 
+   <script>
+
+
+// 1st problem
+
+let rows = +prompt("enter the no of rows :  ")
+
+//console.log(String.fromCharCode(97));
+
+for(i=1;i<=rows;i++){
+    s="";
+    for (j=1;j<=i;j++){
+        if(j%2==1){
+            
+        s= s + String.fromCharCode(96+j)+" "
+        }else {
+             s= s + String.fromCharCode(96+j).toUpperCase() +" "
+        }
+    }
+    console.log(s)
+}
+
+
+// 2nd problem
+let rows1 = +prompt("enter the no of rows :  ")
+
+num=96;
+for(i=1;i<=rows1;i++){
+    s="";
+    for (j=1;j<=i;j++){
+        num++
+        if(num%2==0){
+            
+        s= s + String.fromCharCode(num)+" "
+        }else {
+             s= s + String.fromCharCode(num).toUpperCase() +" "
+        }
+    }
+    console.log(s)
+}
+
+   </script>
+</body>
+</html>
